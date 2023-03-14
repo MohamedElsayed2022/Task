@@ -27,7 +27,7 @@
               للمشاريع المميزة منها محليًا ودوليًا
               <span><img src="./assets//images/arrow.svg" alt="arrow" /></span>
             </p>
-            <button class="btn">
+            <button class="btn n">
               <span class="btn-arrow">
                 <img
                   src="./assets//images/small-arrow.svg"
@@ -47,7 +47,8 @@
       </section>
 
       <section class="img-wrapper">
-        <img src="./assets//images/playbutton.svg" alt="play button" />
+        <img class="plci"  src="./assets//images/playbutton.svg" alt="play button" />
+        <img class="plci" id="cira" src="./assets/images/playbuttoncircle.svg" alt="playbuttoncit">
       </section>
     </section>
 
@@ -55,17 +56,17 @@
       <h2>جسر المستفيد</h2>
       <p>يعبر هذا النص العربي عن نص وهمي سيتم اضافة نص حقيقي قريباً</p>
       <section class="bridge-items">
-        <span class="bridge-item active">التسجيل</span>
-        <span class="bridge-item">القبول</span>
-        <span class="bridge-item">التدريب</span>
-        <span class="bridge-item">دراسة الجدوى</span
-        ><span class="bridge-item">جلسات الاستشارية </span>
-        <span class="bridge-item">تمويل</span>
-        <span class="bridge-item">تطوير الاعمال</span>
-        <span class="bridge-item">تصدير</span>
+        <button id="1" onclick="cli1()" class="bridge-item active">التسجيل</button>
+        <button id="2" onclick="cli2()" class="bridge-item">القبول</button>
+        <button id="3" onclick="cli3()" class="bridge-item">التدريب</button>
+        <button id="4" onclick="cli4()" class="bridge-item">دراسة الجدوى</button
+        ><button id="5" onclick="cli5()" class="bridge-item">جلسات الاستشارية </button>
+        <button id="6" onclick="cli6()" class="bridge-item">تمويل</button>
+        <button id="7" onclick="cli7()" class="bridge-item">تطوير الاعمال</button>
+        <button id="8" onclick="cli8()" class="bridge-item">تصدير</button>
       </section>
       <section class="bridge-caption">
-        <span>01</span>
+        <span id="p1">01</span>
         <p>
           في هذه المرحلة نسعى لاستقطاب الاسر المنتجة ذو الكفاءة و الرغبة
           للانتقال الى مشاريع صغيرة مستدامة
@@ -84,13 +85,13 @@
         <section class="services-img services-img--1 active-img">
           <section>
             <h3>التدريب</h3>
-            <p>
+            <p class="p2">
               برامج تدريبية وتأهيلية لتنمية المهارات المعرفية لأصحاب المشاريع
-              المتناهية الصغر
+              
             </p>
             <button class="btn">
               <span class="btn-arrow">
-                <img
+                <img 
                   src="./assets//images/small-arrow.svg"
                   alt="circle arrow"
                 />
@@ -101,15 +102,55 @@
         </section>
         <section class="services-img services-img--2">
           <p class="services-img-txt">تطوير الأعمال</p>
+
+          <button class="btn">
+            <span class="btn-arrow">
+              <img 
+                src="./assets//images/small-arrow.svg"
+                alt="circle arrow"
+              />
+            </span>
+            <span class="btn-txt">عرض المزيد</span>
+          </button>
         </section>
         <section class="services-img services-img--3">
           <p class="services-img-txt">دراسة الجدوى</p>
+
+          <button class="btn">
+            <span class="btn-arrow">
+              <img 
+                src="./assets//images/small-arrow.svg"
+                alt="circle arrow"
+              />
+            </span>
+            <span class="btn-txt">عرض المزيد</span>
+          </button>
         </section>
         <section class="services-img services-img--4">
           <p class="services-img-txt">الجلسات الاستشارية</p>
+
+          <button class="btn">
+            <span class="btn-arrow">
+              <img 
+                src="./assets//images/small-arrow.svg"
+                alt="circle arrow"
+              />
+            </span>
+            <span class="btn-txt">عرض المزيد</span>
+          </button>
         </section>
         <section class="services-img services-img--5">
           <p class="services-img-txt">التمويل</p>
+
+          <button class="btn">
+            <span class="btn-arrow">
+              <img 
+                src="./assets//images/small-arrow.svg"
+                alt="circle arrow"
+              />
+            </span>
+            <span class="btn-txt">عرض المزيد</span>
+          </button>
         </section>
       </section>
     </section>
@@ -148,5 +189,160 @@
         <a href="#">شروط الاستخدام</a>
       </section>
     </footer>
+    <script>
+    function cli1(){
+      document.getElementById("p1").innerHTML="01"
+      document.getElementById("1").style.background="#14b1c7"
+      document.getElementById("1").style.color="#ffffff"      
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli2(){
+      document.getElementById("p1").innerHTML="02"
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"
+      document.getElementById("2").style.background="#14b1c7"
+      document.getElementById("2").style.color="#ffffff"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli3(){
+      document.getElementById("p1").innerHTML="03"
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="#14b1c7"
+      document.getElementById("3").style.color="#ffffff"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli4(){
+      document.getElementById("p1").innerHTML="04"
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"      
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="#14b1c7"
+      document.getElementById("4").style.color="#ffffff"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli5(){
+      document.getElementById("p1").innerHTML="05"
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"      
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="#14b1c7"
+      document.getElementById("5").style.color="#ffffff"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli6(){
+      document.getElementById("p1").innerHTML="06"
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"      
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="#14b1c7"
+      document.getElementById("6").style.color="#ffffff"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli7(){
+      document.getElementById("p1").innerHTML="07"
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"      
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="#14b1c7"
+      document.getElementById("7").style.color="#ffffff"
+      document.getElementById("8").style.background="white"
+      document.getElementById("8").style.color="black"
+    }
+    function cli8(){
+      document.getElementById("p1").innerHTML="08"      
+      document.getElementById("1").style.background="white"
+      document.getElementById("1").style.color="black"
+      document.getElementById("2").style.background="white"
+      document.getElementById("2").style.color="black"
+      document.getElementById("3").style.background="white"
+      document.getElementById("3").style.color="black"
+      document.getElementById("4").style.background="white"
+      document.getElementById("4").style.color="black"
+      document.getElementById("5").style.background="white"
+      document.getElementById("5").style.color="black"
+      document.getElementById("6").style.background="white"
+      document.getElementById("6").style.color="black"
+      document.getElementById("7").style.background="white"
+      document.getElementById("7").style.color="black"
+      document.getElementById("8").style.background="#14b1c7"
+      document.getElementById("8").style.color="#ffffff"
+    }
+
+    </script>
   </body>
 </html>

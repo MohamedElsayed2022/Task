@@ -14,6 +14,9 @@ body {
   margin: 0;
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
+button{
+  background-color: white;
+}
 img,
 picture,
 video,
@@ -56,7 +59,7 @@ a {
 }
 
 .header {
-  height: 762px;
+  height: 25px;
 }
 
 .about {
@@ -208,6 +211,7 @@ a {
   border: 1px solid #14b1c7;
   border-radius: 112px;
   position: relative;
+  cursor: pointer;
 }
 
 .bridge-item:not(:last-of-type)::after {
@@ -222,11 +226,6 @@ a {
   background-color: rgb(156, 155, 155);
   /* transform: translateY(50%); */
   transform: translateX(-10px);
-}
-
-.active {
-  background-color: #14b1c7;
-  color: #ffffff;
 }
 
 .bridge-caption {
@@ -298,14 +297,7 @@ a {
   z-index: -2;
 }
 
-.active-img {
-  width: 650px;
-  flex: 3;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .active-img section {
   max-width: 70%;
@@ -412,5 +404,62 @@ footer {
 
   .footer-one {
     flex-direction: column;
+  }
+}
+.bridge-item:hover{
+  background-color: #14b1c7;
+  color: #ffffff;
+
+}
+.services-img{
+  cursor: pointer;
+}
+.btn{
+  visibility: hidden;
+  }
+.n{
+  visibility: visible;
+}
+  .p2{
+    visibility: hidden;
+  }
+  .services-img:hover{
+    width: 650px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services-img:hover .btn{
+  visibility: visible;
+  }
+  .services-img:hover .p2{
+    visibility: visible;
+    }
+.plci{
+position: absolute;
+}
+#cira{
+  animation: puls 2s infinite;
+
+}
+@keyframes puls {
+  0% {
+    opacity: 0.9;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  60%{
+    opacity: 0.4;
+  }
+  80%{
+    opacity: 0.3;
+  }
+  90%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 0;
   }
 }
