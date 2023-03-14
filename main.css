@@ -59,7 +59,7 @@ a {
 }
 
 .header {
-  height: 25px;
+  height: 720px;
 }
 
 .about {
@@ -406,11 +406,7 @@ footer {
     flex-direction: column;
   }
 }
-.bridge-item:hover{
-  background-color: #14b1c7;
-  color: #ffffff;
 
-}
 .services-img{
   cursor: pointer;
 }
@@ -462,4 +458,23 @@ position: absolute;
   100%{
     opacity: 0;
   }
+}
+.bridge-item:hover::after{
+  background-color: #14b1c7;
+  height: 4px;
+}
+.bridge-item {
+  padding: 12px 20px;
+  border: 1px solid #14b1c7;
+  border-radius: 112px;
+  position: relative;
+  transition: color 1s ease-in-out, box-shadow 0.9s ease-in-out;
+}
+.bridge-item:hover{
+  color:white;
+  font-size:105%;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+}
+.services-img{
+  width: 10px;
 }
